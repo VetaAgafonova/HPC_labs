@@ -1,4 +1,4 @@
-https://colab.research.google.com/drive/1jjgXWPsgE5_0zJ6P8mHZtO9WF6kC4k9Z#scrollTo=ejUTAAyMWnge&uniqifier=1
+!https://colab.research.google.com/drive/1jjgXWPsgE5_0zJ6P8mHZtO9WF6kC4k9Z#scrollTo=ejUTAAyMWnge&uniqifier=1
 
 
 Задача: реализовать алгоритм перемножения матриц (а CPU и на GPU сприменением CUDA)
