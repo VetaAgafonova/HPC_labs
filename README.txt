@@ -1,14 +1,11 @@
-https://colab.research.google.com/drive/1jjgXWPsgE5_0zJ6P8mHZtO9WF6kC4k9Z#scrollTo=ejUTAAyMWnge&uniqifier=1
+https://drive.google.com/file/d/1c5lZPUTqBVe4_yetr568exljKw9ZqVPv/view?usp=sharing
 
 
-Задача: реализовать алгоритм перемножения матриц (а CPU и на GPU сприменением CUDA)
-Входные данные: 2 матрицы размером от 100х100 до 2000х2000 каждая.
-Выходные данные: проверка корректности перемножения + время вычисления
+Задача: Given the image of size M×N, implement and apply a CUDA version of 9-point bilateral filter and store the
+result to output image. Missing values for edge rows and columns are to be taken from nearest pixels. CUDA
+implementation must make use of texture memory.
+Входные данные: Input grayscale image in BMP format, σ values;
+Выходные данные: The time of image processing using GPU; The time of image processing using СPU; Resulting images in BMP format
 
 
-1 Была реализована программа с использованием библиотеки CUBLAS для умножения квадратных матриц размерностей N×N, сгенерированных случайно. CUBLAS хранит матрицы по столбцам и использует индексирование с 1. C++ использует построчное хранение. Для сравнения результатов полученных на CPU и на GPU, результат полученный на GPU был транспонирован. Генерация данных и вычисления происходят на GPU, так как это быстрее чем делать генерацию и последовательные вычисления на CPU или передавать эти данные на GPU после генерации на CPU. 
-2 Был реализован ijk-алгоритм умножения матриц. В GPU каждая нить вычисляет свой элемент матрицы. 
-3 Был реализован ijk-алгоритм умножения матриц на CPU.
-
-Результаты запусков приведены в файле experimentsMatMul.xlsx.
-
+Одна нить обрабатывает один пиксель и сохраняет значение  в выходной массив.
